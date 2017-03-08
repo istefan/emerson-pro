@@ -1,0 +1,41 @@
+.site-header {
+	padding: 			25px 0;
+	background-color: 	#ffffff;
+}
+
+.site-branding {
+	float: 				left;
+}
+
+.site-title {
+	font-family: 		"Roboto", Helvetica, Arial, sans-serif;
+	@include 			font-size(36);
+	font-weight: 		400;
+	margin: 			0;
+	line-height: 		80px;
+}
+
+.site-title a,
+.site-title a:hover {
+	color: 				$heading-font-color;
+	text-decoration: 	none;
+}
+
+.wp-custom-logo .site-title {
+	display: 			none;
+	visibility: 		hidden;
+}
+
+.site-description {
+	float: 				right;
+	line-height: 		80px;
+	margin: 			0;
+	font-style: 		italic;
+	color: 				$secondary-color;
+}
+
+.custom-logo {
+	height: 			80px;
+	max-height: 		80px;
+	width: 				auto;
+}
