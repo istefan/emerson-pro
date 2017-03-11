@@ -203,18 +203,9 @@ body.bbpress #bbpress-forums {
 	padding: 			24px;
 }
 
-.enews-widget,
-.enews-widget .widget-title {
-	color: 				#fff;
-}
-
 .sidebar .widget.enews-widget {
-	background-color: 	#333;
-}
-
-.enews-widget input,
-.enews-widget input:focus {
-	border: 1px solid 	#333;
+	background-color: 	$tertiary-color;
+	border: 			1px solid $accent-color;
 }
 
 .enews-widget input {

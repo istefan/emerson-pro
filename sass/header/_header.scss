@@ -1,10 +1,10 @@
 .site-header {
-	padding: 			25px 0;
+	padding: 			20px 0;
 	background-color: 	#ffffff;
 }
 
 .site-branding {
-	float: 				left;
+	text-align: 		center;
 }
 
 .site-title {
@@ -27,15 +27,32 @@
 }
 
 .site-description {
-	float: 				right;
-	line-height: 		80px;
+	line-height: 		30px;
 	margin: 			0;
 	font-style: 		italic;
 	color: 				$secondary-color;
+	text-align: 		center;
 }
 
 .custom-logo {
 	height: 			80px;
 	max-height: 		80px;
 	width: 				auto;
+}
+
+@media (min-width: $small-screen) {
+	.site-header {
+		padding: 			25px 0;
+	}
+
+	.site-branding {
+		float: 				left;
+		text-align: 		left;
+	}
+
+	.site-description {
+		float: 				right;
+		text-align: 		left;
+		line-height: 		80px;
+	}
 }

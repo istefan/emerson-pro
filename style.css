@@ -256,7 +256,6 @@ a {
   color: #D51515;
   text-decoration: none;
 }
-
 a:hover {
   color: #111111;
 }
@@ -1155,7 +1154,7 @@ textarea:focus {
   padding: 30px 0;
 }
 
-body.page-template-page-front .site-content {
+body.page-template-template-front-page .site-content {
   max-width: 100%;
 }
 
@@ -1190,8 +1189,8 @@ body.page-template-page-front .site-content {
     float: right;
   }
 
-  body.page-template-page-no-sidebar .content-area,
-  body.no-sidebar .content-area,
+  body.page-template-template-no-sidebar .content-area,
+  body.post-template-template-no-sidebar .content-area,
   body.single-portfolio .content-area,
   body.woocommerce .content-area {
     float: none;
@@ -1200,8 +1199,9 @@ body.page-template-page-front .site-content {
   }
 
   body.post-type-archive-portfolio .content-area,
-  body.page-template-page-full .content-area,
-  body.page-template-page-front .content-area {
+  body.page-template-template-full-width .content-area,
+  body.post-template-template-full-width .content-area,
+  body.page-template-template-front-page .content-area {
     width: 100%;
   }
 }
@@ -1218,12 +1218,12 @@ body.page-template-page-front .site-content {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  padding: 25px 0;
+  padding: 20px 0;
   background-color: #ffffff;
 }
 
 .site-branding {
-  float: left;
+  text-align: center;
 }
 
 .site-title {
@@ -1247,11 +1247,11 @@ body.page-template-page-front .site-content {
 }
 
 .site-description {
-  float: right;
-  line-height: 80px;
+  line-height: 30px;
   margin: 0;
   font-style: italic;
   color: #999999;
+  text-align: center;
 }
 
 .custom-logo {
@@ -1260,6 +1260,22 @@ body.page-template-page-front .site-content {
   width: auto;
 }
 
+@media (min-width: 768px) {
+  .site-header {
+    padding: 25px 0;
+  }
+
+  .site-branding {
+    float: left;
+    text-align: left;
+  }
+
+  .site-description {
+    float: right;
+    text-align: left;
+    line-height: 80px;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1756,14 +1772,14 @@ body.single-portfolio .entry-title {
 /*--------------------------------------------------------------
 ## Front Page
 --------------------------------------------------------------*/
-body.page-template-page-front .hentry {
+body.page-template-template-front-page .hentry {
   border-bottom: none;
   margin-bottom: 0;
 }
-body.page-template-page-front .front-page-sections h1, body.page-template-page-front .front-page-sections h2, body.page-template-page-front .front-page-sections h3, body.page-template-page-front .front-page-sections h4, body.page-template-page-front .front-page-sections h5, body.page-template-page-front .front-page-sections h6 {
+body.page-template-template-front-page .front-page-sections h1, body.page-template-template-front-page .front-page-sections h2, body.page-template-template-front-page .front-page-sections h3, body.page-template-template-front-page .front-page-sections h4, body.page-template-template-front-page .front-page-sections h5, body.page-template-template-front-page .front-page-sections h6 {
   font-weight: 400;
 }
-body.page-template-page-front .front-page-section {
+body.page-template-template-front-page .front-page-section {
   padding-top: 60px;
   padding-bottom: 40px;
   background-repeat: no-repeat;
@@ -1772,8 +1788,8 @@ body.page-template-page-front .front-page-section {
   -o-background-size: cover;
   background-size: cover;
 }
-body.page-template-page-front .front-page-section-1 {
-  background-color: #D51515;
+body.page-template-template-front-page .front-page-section-1 {
+  background-color: #5b616b;
   padding-top: 80px;
   padding-bottom: 60px;
   color: #fff;
@@ -1781,26 +1797,26 @@ body.page-template-page-front .front-page-section-1 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-body.page-template-page-front .front-page-section-1 h1, body.page-template-page-front .front-page-section-1 h2, body.page-template-page-front .front-page-section-1 h3, body.page-template-page-front .front-page-section-1 h4, body.page-template-page-front .front-page-section-1 h5, body.page-template-page-front .front-page-section-1 h6 {
+body.page-template-template-front-page .front-page-section-1 h1, body.page-template-template-front-page .front-page-section-1 h2, body.page-template-template-front-page .front-page-section-1 h3, body.page-template-template-front-page .front-page-section-1 h4, body.page-template-template-front-page .front-page-section-1 h5, body.page-template-template-front-page .front-page-section-1 h6 {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
   text-transform: none;
 }
-body.page-template-page-front .front-page-section-1 h2 {
+body.page-template-template-front-page .front-page-section-1 h2 {
   font-size: 44px;
   font-weight: 700;
 }
 
 @media (min-width: 992px) {
-  body.page-template-page-front .front-page-section {
+  body.page-template-template-front-page .front-page-section {
     padding-top: 100px;
     padding-bottom: 80px;
   }
-  body.page-template-page-front .front-page-section-1 {
+  body.page-template-template-front-page .front-page-section-1 {
     padding-top: 100px;
     padding-bottom: 80px;
   }
-  body.page-template-page-front .front-page-section-1 h2 {
+  body.page-template-template-front-page .front-page-section-1 h2 {
     font-size: 48px;
   }
 }
@@ -1843,6 +1859,12 @@ body.page-template-page-front .front-page-section-1 h2 {
 }
 .widget-area .widget {
   margin-bottom: 40px;
+}
+
+.content-sidebar .widget-title,
+.content-sidebar .widgettitle {
+  border: none;
+  padding-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2339,18 +2361,9 @@ body.bbpress #bbpress-forums a.bbp-author-avatar img {
   padding: 24px;
 }
 
-.enews-widget,
-.enews-widget .widget-title {
-  color: #fff;
-}
-
 .sidebar .widget.enews-widget {
-  background-color: #333;
-}
-
-.enews-widget input,
-.enews-widget input:focus {
-  border: 1px solid 	#333;
+  background-color: #f7f7f7;
+  border: 1px solid #ecf0f1;
 }
 
 .enews-widget input {
